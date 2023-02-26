@@ -1,0 +1,42 @@
+.feature {
+    text-align: center;
+
+    &__title {
+        margin-bottom: 2rem;
+
+    }
+
+    &__grid {
+        grid-template-areas: '1fr';
+        gap: 3rem;
+
+
+        @media (min-width:50.063rem) {
+            grid-template-areas: '1fr 1fr';
+            
+        }
+
+        @media (min-width:74.938rem) {
+            grid-template-areas: '1fr 1fr 1fr 1fr';
+        }
+
+    }
+
+    &__card {
+        flex-direction: column;
+        align-items: center;
+        
+        > div {
+            background-color: var(--primary-clr-dark);
+            height: 20.625rem;
+            width: 16.25rem;
+            margin-bottom: .5rem;
+        }
+
+        > p {
+            font-size: var(--fs-sml);
+            margin-bottom: 2rem;
+            width: 16.25rem;
+        }
+    }
+}

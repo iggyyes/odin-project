@@ -1,0 +1,32 @@
+.cta {
+    text-align: center;
+
+    @media (min-width:50.063rem) {
+        text-align: left;
+    }
+
+    &__wrapper {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.5rem;
+        background-color: var(--primary-clr-dark);
+        color: var(--primary-clr-light);
+        padding: 2rem;
+        border-radius: 1em;
+
+        @media (min-width:50.063rem) {
+            flex-direction: row;
+            padding: 4rem;
+        }
+    }
+
+    &__text {
+        flex-direction: column;
+    }
+
+    &__heading {
+        font-size: var(--fs-lrg);
+        font-weight: var(--fw-bold);
+    }
+    
+}

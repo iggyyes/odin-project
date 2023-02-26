@@ -1,0 +1,37 @@
+.quote {
+
+    &__content {
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        padding-inline: 2rem;
+        text-align: center;
+
+        @media (min-width:50.063rem) {
+            font-size: var(--fs-lrg);
+            text-align: left;
+            padding-inline: 10rem;
+        }
+
+        @media (min-width:74.938rem) {
+            font-size: var(--fs-xlrg);
+            padding-inline: 13.62rem;
+        }
+        
+
+    }
+
+    &__text {
+        margin-bottom: 1rem;
+    }
+
+    &__author {
+        font-weight: var(--fw-bold);
+
+        @media (min-width:50.063rem) {
+            text-align: right;
+        }
+        
+
+    }
+}
